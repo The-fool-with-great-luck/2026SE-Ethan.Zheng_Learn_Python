@@ -1,15 +1,10 @@
-#Asking user for language.
-print("what's your name? ")
-name = input().strip().title()
+def main():
+    name = input("What's your name? ")
+    hello()name
 
-#remove whitespace from str
-#name = name.strip()
 
-#Capitalize the name
-#name = name.title()
+def hello(to="world"):
+    print("hello,", to)
 
-#split uers name into first name and last name
-name.split(" ")
 
-#Say hello to user
-print(f"hello, {name}")
+main()
